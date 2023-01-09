@@ -32,7 +32,7 @@ body {
   width: 200px;
   height: 100vh;
   z-index: 100;
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
 }
 
 .nav__logo {
@@ -69,4 +69,54 @@ body {
 .nav__list li a:hover {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.header {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 130%;
+  position: relative;
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 30px 0;
+}
+
+button,
+input[type='submit'] {
+  background-color: var(--secondary-color);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 8px 12px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.toggle {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  font-size: 20px;
+}
+
+.main {
+  padding: 15px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 800px;
 }

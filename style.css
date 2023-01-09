@@ -62,7 +62,7 @@ body {
 }
 
 .nav__list li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -120,3 +120,76 @@ button:focus {
   max-width: 100%;
   width: 800px;
 }
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  width: 400px;
+}
+
+.modal__header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 15px;
+}
+
+.modal__header h3 {
+  margin: 0px;
+  border-bottom: 1px solid #333;
+}
+
+.modal__content {
+  padding: 20px;
+}
+
+.modal__form div {
+  margin: 15px 0;
+}
+
+.modal__form div:last-of-type {
+  margin: 15px 0 0;
+}
+
+.modal__form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal__form-input {
+  padding: 8px;
+  width: 100%;
+}
+
+.close-btn {
+  background-color: transparent;
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal__form-submit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-btn {}
